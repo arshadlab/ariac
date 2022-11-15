@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>osrf_gear</name>
+  <version>3.5.3</version>
+  <description>
+    The ROS package for the NIST Industrial Automation Competition.
+  </description>
+
+  <author email="caguero@osrfoundation.org">Carlos Aguero</author>
+  <author email="dhood@osrfoundation.org">D. Hood</author>
+  <author email="william@osrfoundation.org">William Woodall</author>
+
+  <!-- iiwa_control, iiwa_description, iiwa_gazebo author -->
+  <author email="salvo.virga@tum.de">Salvo Virga</author>
+
+  <!-- ur_gazebo authors -->
+  <author>Alexander Bubeck</author>
+  <author email="sedwards@swri.org">Shaun Edwards</author>
+  <author email="fxm@ipa.fhg.de">Felix Messmer</author>
+
+  <!-- ur_description authors -->
+  <author>Wim Meeussen</author>
+  <author email="kphawkins@gatech.edu">Kelsey Hawkins</author>
+  <author>Mathias Ludtke</author>
+  <author email="fxm@ipa.fhg.de">Felix Messmer</author>
+
+  <maintainer email="sloretz@osrfoundation.org">Shane Loretz</maintainer>
+
+  <license>Apache 2.0</license>
+  <license>BSD</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>gazebo_plugins</depend>
+  <depend>gazebo_ros</depend>
+  <depend>std_msgs</depend>
+  <depend>std_srvs</depend>
+  <depend>tf</depend>
+  <depend>geometry_msgs</depend>
+  <depend>python-rospkg</depend>
+  <depend>robot_state_publisher</depend>
+  
+  <build_depend>ariac_msgs</build_depend>
+  <build_depend>rclcpp</build_depend>
+  
+
+  <export>
+    <gazebo_ros gazebo_model_path="${prefix}/models"/>
+    <gazebo_ros gazebo_media_path="${prefix}/models"/>
+  </export>
+
+</package>
